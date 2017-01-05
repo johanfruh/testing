@@ -11,13 +11,13 @@ def test_x_0_y_0():
 def test_x_0_y_n():
         inputX = 0
         inputY = 1
-        expected_value = np.sin(y)/y
+        expected_value = np.sin(inputY)/inputY
         calculated_value = sinc2d(inputX, inputY)
         assert expected_value == calculated_value 
 
 def test_x_n_y_0():
         inputX = 1
         inputY = 0
-        expected_value = np.sin(x)/x
+        expected_value = np.sin(inputX)/inputX
         calculated_value = sinc2d(inputX, inputY)
         assert expected_value == calculated_value
